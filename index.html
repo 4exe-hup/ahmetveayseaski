@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aşkımızın Hikayesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Başlangıç Sayfası -->
+    <div id="welcome-page" class="page active">
+        <div class="welcome-container">
+            <div class="hearts-background">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+            <div class="welcome-content">
+                <h1 class="main-title">Aşkımızın Hikayesi</h1>
+                <p class="welcome-subtitle">Sana özel bir hediye hazırladım...</p>
+                <div class="welcome-text">
+                    <!-- DEĞİŞKEN 1: Buton üstündeki yazı -->
+                    <p class="custom-message">Bu yazı benim 1. değişkenim - Buraya istediğin yazıyı yazabilirsin</p>
+                </div>
+                <button id="start-btn" class="start-button">
+                    <i class="fas fa-heart"></i>
+                    Aşka Başla
+                    <i class="fas fa-heart"></i>
+                </button>
+                <div class="floating-elements">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Şifre Sayfası -->
+    <div id="password-page" class="page">
+        <div class="password-container">
+            <div class="password-content">
+                <h2 class="password-title">Gizli Kapı</h2>
+                <p class="password-subtitle">Aşkımızın sırrını çöz</p>
+                
+                <!-- DEĞİŞKEN 3: Şifre ipucu -->
+                <div class="password-hint">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>İpucu: Bu yazı benim 3. değişkenim - Şifre ipucunu buraya yazabilirsin</p>
+                </div>
+                
+                <div class="password-input-container">
+                    <input type="password" id="password-input" placeholder="Şifreyi gir...">
+                    <button id="submit-password" class="password-btn">
+                        <i class="fas fa-key"></i>
+                    </button>
+                </div>
+                
+                <div id="password-error" class="error-message">
+                    Yanlış şifre! Tekrar dene ❤️
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ana Sayfa -->
+    <div id="main-page" class="page">
+        <!-- Hero Bölümü -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- DEĞİŞKEN 4: İsimler ve birlikte olma günü -->
+                <h1 class="couple-names">
+                    <span class="name-1">İsim 1</span>
+                    <i class="fas fa-heart heart-icon"></i>
+                    <span class="name-2">İsim 2</span>
+                </h1>
+                <p class="love-quote">"Aşk, iki kalbin tek ritimde atmasıdır"</p>
+                <div class="days-together">
+                    <div class="days-counter">
+                        <span class="days-number">365</span>
+                        <span class="days-text">Gün Birlikte</span>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>Hikayemizi keşfet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aşk Hikayesi Bölümü -->
+        <section class="love-story-section">
+            <div class="container">
+                <h2 class="section-title">Bizim Hikayemiz</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>İlk Görüş</h3>
+                            <p>O an anladım ki, kalbim sadece seni bekliyormuş...</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>İlk Konuşma</h3>
+                            <p>Sesinle dünyam renklendi, her kelimen kalbimde yankılandı...</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Aşk İtirafı</h3>
+                            <p>Seni sevdiğimi söylediğim o an, hayatımın en güzel anıydı...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Bölümü -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Anılarımız</h2>
+                <div class="gallery-grid">
+                    <!-- DEĞİŞKEN 6: Galeri resimleri ve açıklamaları -->
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Resim 1</span>
+                        </div>
+                        <p class="image-caption">Bu resmin altına istediğin yazıyı yazabilirsin</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Resim 2</span>
+                        </div>
+                        <p class="image-caption">Bu resmin altına istediğin yazıyı yazabilirsin</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Resim 3</span>
+                        </div>
+                        <p class="image-caption">Bu resmin altına istediğin yazıyı yazabilirsin</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Resim 4</span>
+                        </div>
+                        <p class="image-caption">Bu resmin altına istediğin yazıyı yazabilirsin</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Resim 5</span>
+                        </div>
+                        <p class="image-caption">Bu resmin altına istediğin yazıyı yazabilirsin</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Resim 6</span>
+                        </div>
+                        <p class="image-caption">Bu resmin altına istediğin yazıyı yazabilirsin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Müzik Bölümü -->
+        <section class="music-section">
+            <div class="container">
+                <h2 class="section-title">Bizim Şarkımız</h2>
+                <div class="music-player">
+                    <div class="music-info">
+                        <i class="fas fa-music"></i>
+                        <div class="song-details">
+                            <h3>Şarkı Adı</h3>
+                            <p>Sanatçı Adı</p>
+                        </div>
+                    </div>
+                    <!-- DEĞİŞKEN 7: YouTube link -->
+                    <div class="youtube-container">
+                        <iframe id="youtube-player" 
+                                src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="music-quote">"Bu şarkı bizim hikayemizi anlatıyor..."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aşk Mesajları Bölümü -->
+        <section class="messages-section">
+            <div class="container">
+                <h2 class="section-title">Sana Olan Aşkım</h2>
+                <div class="love-messages">
+                    <div class="message-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Sen benim hayatımın en güzel hediyesisin. Her gün seninle geçirdiğim her an, kalbimde sonsuza kadar yaşayacak."</p>
+                    </div>
+                    <div class="message-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Gözlerinde kaybolmak, ellerini tutmak, seninle gülmek... İşte benim cennetime giden yol."</p>
+                    </div>
+                    <div class="message-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Seni sevmek benim için nefes almak kadar doğal, su içmek kadar gerekli."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gelecek Hayalleri -->
+        <section class="future-section">
+            <div class="container">
+                <h2 class="section-title">Gelecek Hayallerimiz</h2>
+                <div class="dreams-grid">
+                    <div class="dream-item">
+                        <i class="fas fa-home"></i>
+                        <h3>Yuva Kurmak</h3>
+                        <p>Seninle güzel bir yuva kurmak, her köşesinde aşkımızın olduğu bir ev...</p>
+                    </div>
+                    <div class="dream-item">
+                        <i class="fas fa-plane"></i>
+                        <h3>Seyahat Etmek</h3>
+                        <p>Dünyanın her yerini seninle gezmek, her yeni yerde yeni anılar biriktirmek...</p>
+                    </div>
+                    <div class="dream-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Sonsuza Kadar</h3>
+                        <p>Seninle yaşlanmak, saçlarımız beyazlayana kadar el ele yürümek...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="footer-message">Bu site, sonsuz aşkımızın küçük bir göstergesi...</p>
+                    <div class="footer-hearts">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p class="footer-date">Aşkla hazırlandı ❤️</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
